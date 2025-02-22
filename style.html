@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBZ Projekt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+<header class="header">
+    <h1>JBZ_Projekt</h1>
+    <nav>
+        <a href="./markup.html">Markup</a>
+        <a href="./style.html">Style</a>
+        <a href="./script.html">Script</a>
+    </nav>
+</header>
+<main class="main">
+    <div class="code-container">
+        <p>/* FONTS (GOOGLE FONTS AND SIZING) */<br><br>
+        @import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');<br><br>
+        body {<br>
+        font-family: 'Inter', sans-serif;<br>
+        font-weight: 400;<br>
+        }<br><br>
+        h1, h2, h3, h4, h5 {<br>
+        font-family: 'Inter', sans-serif;<br>
+        font-weight: 700;<br>
+        }<br><br>
+        html {font-size: 100%;} /* 16px */<br><br>
+        h1 {font-size: 4.210rem; /* 67.36px */}<br><br>
+        h2 {font-size: 3.158rem; /* 50.56px */}<br><br>
+        h3 {font-size: 2.369rem; /* 37.92px */}<br><br>
+        h4 {font-size: 1.777rem; /* 28.48px */}<br><br>
+        h5 {font-size: 1.333rem; /* 21.28px */}<br><br>
+        small {font-size: 0.750rem; /* 12px */}<br><br>
+        /* COLOURS (VARIABLES) */<br><br>
+        :root {<br>
+        --text: #ffffff;<br>
+        --text-links: #e2e2e2;<br>
+        --background: #1b1b1b;<br>
+        --background-secondary: #4e4e4e;<br>
+        --background-tertiary: rgb(52, 52, 52);<br>
+        --primary: #7c7b93;<br>
+        --secondary: #020024;<br>
+        --accent: #0600c2;<br>
+        }<br><br>
+        body {<br>
+        width: 100%;<br>
+        height: 100%;<br>
+        margin: 0;<br>
+        padding: 0;<br>
+        overflow-x: hidden;<br>
+        }<br><br>
+        .body {<br>
+        display: grid;<br>
+        grid-template: repeat(3, 1fr) / 1fr;<br>
+        grid-template-areas:<br>
+        "header header header"<br>
+        "main main main"<br>
+        "footer footer footer";<br>
+        background-color: var(--background);<br>
+        color: var(--text);<br>
+        height: 100vh;<br>
+        width: 100vw;<br>
+        }<br><br>
+        .header {<br>
+        grid-area: header;<br>
+        justify-items: center;<br>
+        align-items: center;<br>
+        background-color: var(--background-secondary);<br>
+        width: 100%;<br>
+        padding-bottom: 25px;<br>
+        }<br><br>
+        .main {<br>
+        grid-area: main;<br>
+        width: 100%;<br>
+        height: 100%;<br>
+        }<br><br>
+        .footer {<br>
+        grid-area: footer;<br>
+        text-align: center;<br>
+        background-color: var(--background-secondary);<br>
+        height: 150px;<br>
+        width: 100%;<br>
+        display: flex;<br>
+        justify-content: center;<br>
+        align-items: center;<br>
+        }<br><br>
+        a {<br>
+        color: var(--text-links);<br>
+        text-decoration: none;<br>
+        font-weight: 700;<br>
+        transition: color 0.2s ease-in-out;<br>
+        padding: 10px;<br>
+        }<br><br>
+        a:hover {<br>
+        color: var(--primary);<br>
+        cursor: pointer;<br>
+        }<br><br>
+        .code-container {<br>
+        background-color: var(--background-tertiary);<br>
+        width: 40%;<br>
+        margin: 25px auto;<br>
+        padding: 25px;<br>
+        border-radius: 10px;<br>
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;<br>
+        font-size: 14px;<br>
+        line-height: 1.5;<br>
+        color: var(--text);<br>
+        }<br><br>
+        .indent-1 {<br>
+        padding-left: 15px;<br>
+        }<br><br>
+        .indent-2 {<br>
+        padding-left: 30px;<br>
+        }<br><br>
+        .indent-3 {<br>
+        padding-left: 45px;<br>
+        }</p>
+    </div>
+</main>
+<footer class="footer">
+    <p>Copyright &copy Lukas Geyer</p>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

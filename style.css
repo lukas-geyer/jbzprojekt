@@ -1,0 +1,124 @@
+/* FONTS (GOOGLE FONTS AND SIZING) */
+
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+/* COLOURS (VARIABLES) */
+
+:root {
+    --text: #ffffff;
+    --text-links: #e2e2e2;
+    --background: #1b1b1b;
+    --background-secondary: #4e4e4e;
+    --background-tertiary: rgb(52, 52, 52);
+    --primary: #7c7b93;
+    --secondary: #020024;
+    --accent: #0600c2;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.body {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    background-color: var(--background);
+    color: var(--text);
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    grid-area: header;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--background-secondary);
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.main {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: var(--background-secondary);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: var(--text-links);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s ease-in-out;
+    padding: 10px;
+}
+
+a:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.code-container {
+    background-color: var(--background-tertiary);
+    width: 40%;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.indent-1 {
+    padding-left: 15px;
+}
+
+.indent-2 {
+    padding-left: 30px;
+}
+
+.indent-3 {
+    padding-left: 45px;
+}
