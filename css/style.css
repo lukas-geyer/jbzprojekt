@@ -33,10 +33,8 @@ small {font-size: 0.750rem; /* 12px */}
     --text-links: #e2e2e2;
     --background: #1b1b1b;
     --background-secondary: #4e4e4e;
-    --background-tertiary: rgb(52, 52, 52);
+    --background-tertiary: #343434;
     --primary: #7c7b93;
-    --secondary: #020024;
-    --accent: #0600c2;
 }
 
 body {
@@ -101,7 +99,7 @@ a:hover {
 
 .code-container {
     background-color: var(--background-tertiary);
-    width: 40%;
+    width: 50%;
     margin: 25px auto;
     padding: 25px;
     border-radius: 10px;
@@ -109,16 +107,4 @@ a:hover {
     font-size: 14px;
     line-height: 1.5;
     color: var(--text);
-}
-
-.indent-1 {
-    padding-left: 15px;
-}
-
-.indent-2 {
-    padding-left: 30px;
-}
-
-.indent-3 {
-    padding-left: 45px;
 }
